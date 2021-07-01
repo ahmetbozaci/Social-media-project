@@ -60,9 +60,9 @@ Set up project using the above specifications
 
 👤 **Ahmet Bozacı**
 
-- Github:[@ahmtbozaci](https://github.com/ahmetbozaci)
-- Twitter:[@ahmtbozaci](https://twitter.com/ahmtbozaci)
-- LinkedIn:[@ahmtbozaci](https://www.linkedin.com/in/ahmetbozaci/)
+- Github:[ahmtbozaci](https://github.com/ahmetbozaci)
+- Twitter:[ahmtbozaci](https://twitter.com/ahmtbozaci)
+- LinkedIn:[ahmtbozaci](https://www.linkedin.com/in/ahmetbozaci/)
 
 ## 🤝 Contributing
 
