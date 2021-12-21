@@ -18,4 +18,4 @@ class JsonWebToken
     # raise custom error to be handled by custom handler
     raise ExceptionHandler::InvalidToken, e.message
   end
-end 
+end

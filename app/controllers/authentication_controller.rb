@@ -1,8 +1,7 @@
-
 class AuthenticationController < ApplicationController
   # return auth token once user is authenticated
   skip_before_action :authorize_request, only: :authenticate
-  protect_from_forgery unless: -> { request.format.json? } 
+  protect_from_forgery unless: -> { request.format.json? }
 
   def authenticate
     auth_token =
@@ -15,4 +14,4 @@ class AuthenticationController < ApplicationController
   def auth_params
     params.permit(:email, :password)
   end
-end 
+end
