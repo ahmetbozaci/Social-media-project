@@ -12,8 +12,9 @@ Rails.application.routes.draw do
     resources :comments, only: [:create]
     resources :likes, only: [:create, :destroy]
   end
-
+  
   get "getPosts", to: "posts#getPosts"
-
+  get "getComments/:post_id", to: "comments#getComments"
+  post "postComment/:user_id/:post_id/:content", to: "comments#post_comment"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
