@@ -11,6 +11,11 @@ class CommentsController < ApplicationController
     end
   end
 
+  def getComments
+    @comments = Post.find(params[:post_id]).comments
+    render json: @comments
+  end
+
   private
 
   def comment_params
