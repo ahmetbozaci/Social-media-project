@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
 
   # called before every action on controllers
   before_action :authorize_request
-  attr_reader :current_user
+  attr_reader :current_user_auth
 
   private
 

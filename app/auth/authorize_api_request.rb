@@ -29,7 +29,7 @@ class AuthorizeApiRequest
 
   # decode authentication token
   def decoded_auth_token
-    @decoded_auth_token ||= JsonWebToken.decode(http_auth_header)
+    # @decoded_auth_token ||= ::JsonWebToken.decode(http_auth_header)
   end
 
   # check for token in `Authorization` header
