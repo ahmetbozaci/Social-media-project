@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   include Response
-  require "concerns/exception_handler.rb"
+  require 'concerns/exception_handler'
   protect_from_forgery with: :exception
   protect_from_forgery unless: -> { request.format.json? }
   before_action :configure_permitted_parameters, if: :devise_controller?
