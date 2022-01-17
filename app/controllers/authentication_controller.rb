@@ -4,8 +4,7 @@ class AuthenticationController < ApplicationController
   protect_from_forgery unless: -> { request.format.json? }
 
   def authenticate
-    auth_token =
-      AuthenticateUser.new(auth_params[:email], auth_params[:password]).call
+    auth_token = AuthenticateUser.new(auth_params[:email], auth_params[:password]).call
     json_response(auth_token: auth_token)
   end
 

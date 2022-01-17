@@ -17,7 +17,7 @@ class PostsController < ApplicationController
     end
   end
 
-  def posts
+  def getPosts
     render json: Post.all
   end
 
