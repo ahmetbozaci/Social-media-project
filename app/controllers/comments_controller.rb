@@ -11,7 +11,7 @@ class CommentsController < ApplicationController
     end
   end
 
-  def getComments
+  def comments
     @comments = Post.find(params[:post_id]).comments
     render json: @comments
   end
@@ -24,10 +24,10 @@ class CommentsController < ApplicationController
       render json: @comment
     else
       puts 'not save'
-      #redirect_to posts_path, alert: @comment.errors.full_messages.join('. ').to_s
+      # redirect_to posts_path, alert: @comment.errors.full_messages.join('. ').to_s
     end
   end
-  
+
   private
 
   def comment_params

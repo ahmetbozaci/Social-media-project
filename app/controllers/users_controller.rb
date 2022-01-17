@@ -8,6 +8,7 @@ class UsersController < ApplicationController
     response = { message: Message.account_created, auth_token: auth_token }
     json_response(response, :created)
   end
+
   def index
     @users = User.all.where.not(email: current_user.email)
   end
