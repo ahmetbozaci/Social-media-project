@@ -11,7 +11,7 @@ class CommentsController < ApplicationController
     end
   end
 
-  def getComments
+  def take_comments
     @comments = Post.find(params[:post_id]).comments
     render json: @comments
   end
