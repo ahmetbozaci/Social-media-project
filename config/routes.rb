@@ -13,8 +13,8 @@ Rails.application.routes.draw do
     resources :likes, only: [:create, :destroy]
   end
 
-  get "getPosts", to: "posts#getPosts"
-  get "getComments/:post_id", to: "comments#getComments"
+  get "getPosts", to: "posts#posts"
+  get "take_comments/:post_id", to: "comments#take_comments"
   post "postComment/:user_id/:post_id/:content", to: "comments#post_comment"
   post 'auth/login', to: 'authentication#authenticate'
   post 'signup', to: 'users#create'
